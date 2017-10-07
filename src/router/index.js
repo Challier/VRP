@@ -5,8 +5,13 @@ import Calendar from '@/components/Calendar'
 import Data from '@/components/Data'
 import Team from '@/components/Team'
 import Shop from '@/components/Shop'
+import VueAnalytics from 'vue-analytics'
 
 Vue.use(Router)
+Vue.use(VueAnalytics, {
+  id: 'UA-107705544-1',
+  checkDuplicatedScript: true
+})
 
 export default new Router({
   mode: 'history',
