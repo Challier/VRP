@@ -41,63 +41,63 @@ export default {
           nom: 'Allain',
           poste: 'Demi d\'ouverture',
           current: true,
-          src: '/static/doc-images/players/thibaud_allain.jpg'
+          src: 'static/doc-images/players/thibaud_allain.jpg'
         },
         {
           prenom: 'Rémi',
           nom: 'Dupeuble',
           poste: 'Troisième ligne centre',
           current: false,
-          src: '/static/doc-images/players/remi_dupeuble.jpg'
+          src: 'static/doc-images/players/remi_dupeuble.jpg'
         },
         {
           prenom: 'Manu',
           nom: 'Berthomieu',
           poste: 'Troisième ligne centre',
           current: true,
-          src: '/static/doc-images/players/manu_berthomieu.jpg'
+          src: 'static/doc-images/players/manu_berthomieu.jpg'
         },
         {
           prenom: 'Victor',
           nom: 'Bourrier',
           poste: 'Deuxième ligne',
           current: true,
-          src: '/static/doc-images/players/victor_bourrier.jpg'
+          src: 'static/doc-images/players/victor_bourrier.jpg'
         },
         {
           prenom: 'Louis',
           nom: 'Lhermitte',
           poste: 'Deuxième ligne',
           current: true,
-          src: '/static/doc-images/players/louis_lhermitte.jpg'
+          src: 'static/doc-images/players/louis_lhermitte.jpg'
         },
         {
           prenom: 'Sébastien',
           nom: 'Malaussène',
           poste: 'Talonneur',
           current: true,
-          src: '/static/doc-images/players/seb_malaussene.jpg'
+          src: 'static/doc-images/players/seb_malaussene.jpg'
         },
         {
           prenom: 'Etienne',
           nom: 'Jouan',
           poste: 'Deuxième ligne',
           current: true,
-          src: '/static/doc-images/players/etienne_jouan.jpg'
+          src: 'static/doc-images/players/etienne_jouan.jpg'
         },
         {
           prenom: 'Victor',
           nom: 'Challier',
           poste: 'Troisième ligne aile',
           current: true,
-          src: '/static/doc-images/players/victor_challier.jpg'
+          src: 'static/doc-images/players/victor_challier.jpg'
         },
         {
           prenom: 'Greg',
           nom: 'Degrange',
           poste: 'Demi de mêlée',
           current: true,
-          src: '/static/doc-images/players/greg_degrange.jpg'
+          src: 'static/doc-images/players/greg_degrange.jpg'
         }
       ],
       filter: ''

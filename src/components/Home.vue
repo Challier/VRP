@@ -30,25 +30,25 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       logos: [
-        { title: 'Pre-fab homes', src: '/static/doc-images/ffse/logo_FFSE.png' },
-        { title: 'Favorite road trips', src: '/static/doc-images/ffse/logo-LARGE.png' },
-        { title: 'Best airlines', src: '/static/doc-images/ffse/Corpo-TOP14.png' }
+        { title: 'Pre-fab homes', src: 'static/doc-images/ffse/logo_FFSE.png' },
+        { title: 'Favorite road trips', src: 'static/doc-images/ffse/logo-LARGE.png' },
+        { title: 'Best airlines', src: 'static/doc-images/ffse/Corpo-TOP14.png' }
       ],
       photos: [
         {
-          src: '/static/doc-images/carousel/equipe.jpg'
+          src: 'static/doc-images/carousel/equipe.jpg'
         },
         {
-          src: '/static/doc-images/carousel/vieux_vieux.jpg'
+          src: 'static/doc-images/carousel/vieux_vieux.jpg'
         },
         {
-          src: '/static/doc-images/carousel/Dublin_Tournee.jpg'
+          src: 'static/doc-images/carousel/Dublin_Tournee.jpg'
         },
         {
-          src: '/static/doc-images/carousel/dublin_apres_match.jpg'
+          src: 'static/doc-images/carousel/dublin_apres_match.jpg'
         },
         {
-          src: '/static/doc-images/carousel/avant_match_gros.jpg'
+          src: 'static/doc-images/carousel/avant_match_gros.jpg'
         }
       ]
     }
