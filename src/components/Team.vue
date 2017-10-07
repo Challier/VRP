@@ -41,63 +41,63 @@ export default {
           nom: 'Allain',
           poste: 'Demi d\'ouverture',
           current: true,
-          src: 'static/doc-images/players/thibaud_allain.jpg'
+          src: 'https://i.imgur.com/YMVCvAw.jpg'
         },
         {
           prenom: 'Rémi',
           nom: 'Dupeuble',
           poste: 'Troisième ligne centre',
           current: false,
-          src: 'static/doc-images/players/remi_dupeuble.jpg'
+          src: 'https://i.imgur.com/MqQ948k.jpg'
         },
         {
           prenom: 'Manu',
           nom: 'Berthomieu',
           poste: 'Troisième ligne centre',
           current: true,
-          src: 'static/doc-images/players/manu_berthomieu.jpg'
+          src: 'https://i.imgur.com/Gof6ph8.jpg'
         },
         {
           prenom: 'Victor',
           nom: 'Bourrier',
           poste: 'Deuxième ligne',
           current: true,
-          src: 'static/doc-images/players/victor_bourrier.jpg'
+          src: 'https://i.imgur.com/dYONmw9.jpg'
         },
         {
           prenom: 'Louis',
           nom: 'Lhermitte',
           poste: 'Deuxième ligne',
           current: true,
-          src: 'static/doc-images/players/louis_lhermitte.jpg'
+          src: 'https://i.imgur.com/jaRqlJU.jpg'
         },
         {
           prenom: 'Sébastien',
           nom: 'Malaussène',
           poste: 'Talonneur',
           current: true,
-          src: 'static/doc-images/players/seb_malaussene.jpg'
+          src: 'https://i.imgur.com/XOOTdjK.jpg'
         },
         {
           prenom: 'Etienne',
           nom: 'Jouan',
           poste: 'Deuxième ligne',
           current: true,
-          src: 'static/doc-images/players/etienne_jouan.jpg'
+          src: 'https://i.imgur.com/DpjVwse.jpg'
         },
         {
           prenom: 'Victor',
           nom: 'Challier',
           poste: 'Troisième ligne aile',
           current: true,
-          src: 'static/doc-images/players/victor_challier.jpg'
+          src: 'https://i.imgur.com/M2PPevT.jpg'
         },
         {
           prenom: 'Greg',
           nom: 'Degrange',
           poste: 'Demi de mêlée',
           current: true,
-          src: 'static/doc-images/players/greg_degrange.jpg'
+          src: 'https://i.imgur.com/u2997nQ.jpg'
         }
       ],
       filter: ''

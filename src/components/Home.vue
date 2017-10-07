@@ -30,25 +30,25 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       logos: [
-        { title: 'Pre-fab homes', src: 'static/doc-images/ffse/logo_FFSE.png' },
-        { title: 'Favorite road trips', src: 'static/doc-images/ffse/logo-LARGE.png' },
-        { title: 'Best airlines', src: 'static/doc-images/ffse/Corpo-TOP14.png' }
+        { title: 'FFSE', src: 'https://i.imgur.com/DvF06Ja.png' },
+        { title: 'Large', src: 'https://i.imgur.com/bT2JUOh.png' },
+        { title: 'Top 14', src: 'https://i.imgur.com/lKFrvYm.png' }
       ],
       photos: [
         {
-          src: 'static/doc-images/carousel/equipe.jpg'
+          src: 'https://i.imgur.com/JHXLRVc.jpg'
         },
         {
-          src: 'static/doc-images/carousel/vieux_vieux.jpg'
+          src: 'https://i.imgur.com/oVLqsnO.jpg'
         },
         {
-          src: 'static/doc-images/carousel/Dublin_Tournee.jpg'
+          src: 'https://i.imgur.com/iqhPNwd.jpg'
         },
         {
-          src: 'static/doc-images/carousel/dublin_apres_match.jpg'
+          src: 'https://i.imgur.com/oZeJzCU.jpg'
         },
         {
-          src: 'static/doc-images/carousel/avant_match_gros.jpg'
+          src: 'https://i.imgur.com/wHDpMHP.jpg'
         }
       ]
     }

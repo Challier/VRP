@@ -9,7 +9,7 @@
       <v-list class="pa-1">
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
-            <img src="/static/logo.jpg" />
+            <img src="https://i.imgur.com/TuH1uGz.jpg" />
           </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title>Les VRP</v-list-tile-title>
@@ -40,7 +40,7 @@
         :size="avatarSize"
         class="primary"
       >
-        <img src="/static/logo.jpg" alt="avatar">
+        <img src="https://i.imgur.com/TuH1uGz.jpg" alt="avatar">
       </v-avatar>
     </v-toolbar>
     <main>
