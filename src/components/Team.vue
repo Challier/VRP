@@ -217,6 +217,22 @@ export default {
           team2017: false,
           team2016: true,
           src: 'https://i.imgur.com/cXsbsNT.jpg'
+        },
+        {
+          prenom: 'Baptiste',
+          nom: 'Benet',
+          poste: 'Première ligne',
+          team2017: true,
+          team2016: true,
+          src: 'https://i.imgur.com/W4Hl8za.jpg'
+        },
+        {
+          prenom: 'Robin',
+          nom: 'Oval',
+          poste: 'Première ligne',
+          team2017: true,
+          team2016: true,
+          src: 'https://i.imgur.com/FrXAsRf.jpg'
         }
       ],
       toggle_exclusive: 0,
