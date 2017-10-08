@@ -9,7 +9,7 @@ import VueAnalytics from 'vue-analytics'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     {
@@ -45,7 +45,9 @@ export default new Router({
   ]
 })
 
+export default router
+
 Vue.use(VueAnalytics, {
   id: 'UA-107705544-1',
-  Router
+  router
 })
