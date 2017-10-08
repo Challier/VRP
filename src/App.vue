@@ -31,17 +31,21 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed app dark class="primary">
-      <v-toolbar-side-icon @click.stop="drawer = !drawer" dark class="hidden-md-and-up"></v-toolbar-side-icon>
-      <v-toolbar-title v-text="title" text-align="center"></v-toolbar-title>
-      <v-spacer></v-spacer>
+    <v-toolbar fixed app light class="app-toolbar text-xs-center">
       <v-avatar
         :tile="tile"
         :size="avatarSize"
         class="primary"
+        right
       >
         <img src="https://i.imgur.com/TuH1uGz.jpg" alt="avatar">
       </v-avatar>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-toolbar-side-icon>
+      <v-toolbar-title v-text="title" text-align="center" class="primary--text"></v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn v-for="item in items" :key="item.title" class="primary--text" :value="item.title" flat router :to="item.url">
+        <v-icon>{{ item.icon }}</v-icon>
+      </v-btn>
     </v-toolbar>
     <main>
       <v-content>
@@ -50,12 +54,6 @@
         </v-container>
       </v-content>
     </main>
-    <v-bottom-nav :value="true" :active.sync="e1" class="grey lighten-4 hidden-sm-and-down">
-      <v-btn v-for="item in items" :key="item.title" class="primary--text" :value="item.title" router :to="item.url">
-        <span>{{ item.title }}</span>
-        <v-icon>{{ item.icon }}</v-icon>
-      </v-btn>
-    </v-bottom-nav>
   </v-app>
 </template>
 
@@ -89,7 +87,7 @@
           title: 'Boutique',
           url: '/Shop'
         }],
-        title: 'VRP - Vieux Rugbymen des Ponts'
+        title: 'Vieux Rugbymen des Ponts'
       }
     }
   }
@@ -98,5 +96,9 @@
 
 
 <style lang="stylus">
-  @import './stylus/main'
+@import './stylus/main'
+
+.app-Text {
+}
+
 </style>

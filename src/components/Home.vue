@@ -49,6 +49,9 @@ export default {
         },
         {
           src: 'https://i.imgur.com/wHDpMHP.jpg'
+        },
+        {
+          src: 'https://i.imgur.com/AFomaxM.jpg[/img]'
         }
       ]
     }

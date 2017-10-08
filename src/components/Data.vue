@@ -49,7 +49,7 @@ export default {
         {
           prenom: 'Manu',
           nom: 'Berthomieu',
-          poste: 'Troisième ligne centre',
+          poste: 'Troisième ligne',
           capes: 40,
           points: 40,
           essais: 8
@@ -97,7 +97,7 @@ export default {
         {
           prenom: 'Victor',
           nom: 'Challier',
-          poste: 'Troisième ligne aile',
+          poste: 'Troisième ligne',
           capes: 9,
           points: 15,
           essais: 3
