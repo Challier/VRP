@@ -8,7 +8,8 @@
         class="elevation-4"
       >
       <template slot="items" scope="props">
-        <td class="text-xs-left">{{ props.item.prenom }}</td>
+        <td class="text-xs-left"><v-list-tile-avatar avatar class="ma-1"><img :src="props.item.src" /></v-list-tile-avatar></td>
+        <td class="text-xs-right">{{ props.item.prenom }}</td>
         <td class="text-xs-right">{{ props.item.nom }}</td>
         <td class="text-xs-right">{{ props.item.poste }}</td>
         <td class="text-xs-right">{{ props.item.capes }}</td>
@@ -31,17 +32,19 @@ export default {
           sortable: false,
           value: 'prenom'
         },
+        { text: 'Prénom', value: 'prenom' },
         { text: 'Nom', value: 'nom' },
         { text: 'Poste', value: 'poste' },
         { text: 'Capes', value: 'capes' },
         { text: 'Points', value: 'points' },
-        { text: 'Essais marqués', value: 'essais' }
+        { text: 'Essais', value: 'essais' }
       ],
       items: [
         {
           prenom: 'Thibaud',
           nom: 'Allain',
           poste: 'Demi d\'ouverture',
+          src: 'https://i.imgur.com/YMVCvAw.jpg',
           capes: 50,
           points: 130,
           essais: 5
@@ -50,6 +53,7 @@ export default {
           prenom: 'Manu',
           nom: 'Berthomieu',
           poste: 'Troisième ligne',
+          src: 'https://i.imgur.com/Gof6ph8.jpg',
           capes: 40,
           points: 40,
           essais: 8
@@ -58,6 +62,7 @@ export default {
           prenom: 'Victor',
           nom: 'Bourrier',
           poste: 'Deuxième ligne',
+          src: 'https://i.imgur.com/dYONmw9.jpg',
           capes: 30,
           points: 30,
           essais: 2
@@ -66,6 +71,7 @@ export default {
           prenom: 'Louis',
           nom: 'Lhermitte',
           poste: 'Deuxième ligne',
+          src: 'https://i.imgur.com/jaRqlJU.jpg',
           capes: 3,
           points: 5,
           essais: 1
@@ -74,14 +80,16 @@ export default {
           prenom: 'Sébastien',
           nom: 'Malaussène',
           poste: 'Talonneur',
+          src: 'https://i.imgur.com/XOOTdjK.jpg',
           capes: 23,
           points: 20,
           essais: 4
         },
         {
-          prenom: 'Louis',
-          nom: 'Prady',
-          poste: 'Troisième ligne',
+          prenom: 'Yann',
+          nom: 'Sambarino',
+          poste: 'Première ligne',
+          src: 'https://i.imgur.com/cXsbsNT.jpg',
           capes: 37,
           points: 20,
           essais: 4
@@ -90,6 +98,7 @@ export default {
           prenom: 'Etienne',
           nom: 'Jouan',
           poste: 'Deuxième ligne',
+          src: 'https://i.imgur.com/DpjVwse.jpg',
           capes: 17,
           points: 5,
           essais: 1
@@ -98,6 +107,7 @@ export default {
           prenom: 'Victor',
           nom: 'Challier',
           poste: 'Troisième ligne',
+          src: 'https://i.imgur.com/kYCdZNv.jpg',
           capes: 9,
           points: 15,
           essais: 3
@@ -106,6 +116,7 @@ export default {
           prenom: 'Greg',
           nom: 'Degrange',
           poste: 'Demi de mêlée',
+          src: 'https://i.imgur.com/u2997nQ.jpg',
           capes: 63,
           points: 40,
           essais: 8
