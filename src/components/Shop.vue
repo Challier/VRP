@@ -1,11 +1,10 @@
 <template>
   <v-layout column>
-    <v-flex xs12 sm8 offset-sm2 class="pb-5">
-      <v-container fluid grid-list-md class="grey lighten-4">
+    <v-flex xs12 sm8 offset-sm2>
+      <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex
             xs4
-            v-bind="{ [`xs${card.flex}`]: true }"
             v-for="card in cards"
             :key="card.title"
           >
@@ -16,10 +15,9 @@
 	            :src="card.src"
 	          >
 	          </v-card-media>
-	          <v-card-title>
-                <div align="left"><a :href="card.url" target="_blank"><v-btn flat><v-icon>shopping_cart</v-icon></v-btn></a></div>
-	              <a :href="card.url" target="_blank" text-align="right"><span class="grey--text">{{ card.title }}</span></a>
-	          </v-card-title>
+            <div class="text-xs-center">
+              <v-btn outline color="primary" :href="card.url" target="_blank">{{ card.title }}</v-btn>
+            </div>
 	        </v-card>
           </v-flex>
         </v-layout>

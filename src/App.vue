@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="mainContainer">
     <v-navigation-drawer
       temporary
       v-model="drawer"
@@ -98,7 +98,20 @@
 <style lang="stylus">
 @import './stylus/main'
 
-.app-Text {
-}
-
 </style>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.mainContainer {
+  background: -moz-linear-gradient(0deg, rgba(255,54,228,0.45) 0%, rgba(0,19,128,0.64) 36%, rgba(0,19,128,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,54,228,0.45)), color-stop(36%, rgba(0,19,128,0.64)), color-stop(100%, rgba(0,19,128,1)));
+  background: -webkit-linear-gradient(0deg, rgba(255,54,228,0.45) 0%, rgba(0,19,128,0.64) 36%, rgba(0,19,128,1) 100%);
+  background: -o-linear-gradient(0deg, rgba(255,54,228,0.45) 0%, rgba(0,19,128,0.64) 36%, rgba(0,19,128,1) 100%);
+  background: -ms-linear-gradient(0deg, rgba(255,54,228,0.45) 0%, rgba(0,19,128,0.64) 36%, rgba(0,19,128,1) 100%);
+  background: linear-gradient(90deg, rgba(255,54,228,0.45) 0%, rgba(0,19,128,0.64) 36%, rgba(0,19,128,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF36E4', endColorstr='#001380',GradientType=1 );
+}
+</style>
+
+
+

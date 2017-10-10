@@ -1,23 +1,34 @@
 <template>
   <v-layout row wrap class="mb-8">
-    <v-flex md12 lg4 offset-lg2>
+    <v-flex xs12 md6 offset-md3>
+      <center>
       <v-date-picker
         v-model="picker"
-        :date-format="date => new Date(date).toDateString()"
         :formatted-value.sync="formatted"
         :allowed-dates="allowedDates"
+        landscape
+        class="hidden-xs-only"
       ></v-date-picker>
+      <v-date-picker
+        v-model="picker"
+        :formatted-value.sync="formatted"
+        :allowed-dates="allowedDates"
+        class="hidden-sm-and-up"
+      ></v-date-picker>
+      </center>
     </v-flex>
+    <v-divider dark></v-divider>
     <v-flex
       v-for="event in events"
       v-if="event.date === picker"
       :key="event.event"
-      md12 lg4
+      xs12 md6 mt-4 offset-md3
     >
       <v-card>
         <v-card-title primary-title>
           <div>
             <div class="headline"><b>Quoi?</b> {{ event.event }}</div>
+            <v-divider dark></v-divider>
       	    <span class="grey--text">{{ event.event }}</span><br>
       	  </div>
         </v-card-title>

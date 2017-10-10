@@ -34,7 +34,7 @@
             <v-card>
               <v-card-text class="text-xs-center">
                 <h6>{{ player.prenom }} {{ player.nom }}</h6>
-                <b>{{ player.poste }}</b><br>
+                <b>{{ player.poste | uppercase }}</b><br>
                 <v-avatar 
                   size="144px" 
                   slot="activator"
@@ -55,7 +55,9 @@
       </div>
       <div v-else>
         <template v-for="poste in postes">
-          <blockquote class="mt-3 md-3 text-xs-left">{{ poste }}</blockquote>
+          <v-divider dark></v-divider>
+          <h6 dark class="mt-3 md-3 text-xs-center poste-title">{{ poste | uppercase }}</h6>
+          <v-divider dark></v-divider>
           <template
             v-for="player in playerFilter" v-if="player.poste === poste">
             <v-dialog v-model="dialog" width="500px">
@@ -70,7 +72,7 @@
               <v-card>
                 <v-card-text class="text-xs-center">
                   <h6>{{ player.prenom }} {{ player.nom }}</h6>
-                  <b>{{ player.poste }}</b><br>
+                  <b>{{ player.poste | uppercase }}</b><br>
                   <v-avatar 
                     size="144px" 
                     slot="activator"
@@ -81,9 +83,9 @@
                   </v-avatar>
                   <br><b class="text-xs-left">Description</b>
                   <p class="text-xs-left text-description">{{ player.description }}</p>
-                  <v-slider disabled :label="ex1.label" v-model="ex1.val" :color="ex1.color"></v-slider>
+                  <!--<v-slider disabled :label="ex1.label" v-model="ex1.val" :color="ex1.color"></v-slider>
                   <v-slider disabled :label="ex2.label" v-model="ex2.val" :color="ex2.color"></v-slider>
-                  <v-slider disabled :label="ex3.label" v-model="ex3.val" :color="ex3.color"></v-slider>
+                  <v-slider disabled :label="ex3.label" v-model="ex3.val" :color="ex3.color"></v-slider>-->
                 </v-card-text>
               </v-card>
             </v-dialog>
@@ -354,6 +356,11 @@ export default {
     team2016 () {
       return this.players.filter((player) => player.team2016 === true)
     }
+  },
+  filters: {
+    uppercase: function (v) {
+      return v.toUpperCase()
+    }
   }
 }
 </script>
@@ -364,5 +371,8 @@ export default {
   text-align: justify;
 }
 
+.poste-title {
+  color: white;
+}
 
 </style>
