@@ -22,7 +22,7 @@
       <div v-if="playerFilterKey === 'all'">
         <template
           v-for="player in playerFilter">
-          <v-dialog v-model="dialog" width="500px">
+          <v-dialog width="500px">
             <v-avatar 
               size="144px" 
               slot="activator"
@@ -45,9 +45,6 @@
                 </v-avatar>
                 <br><b class="text-xs-left">Description</b>
                 <p class="text-xs-left text-description">{{ player.description }}</p>
-                <v-slider disabled :label="ex1.label" v-model="ex1.val" :color="ex1.color"></v-slider>
-                <v-slider disabled :label="ex2.label" v-model="ex2.val" :color="ex2.color"></v-slider>
-                <v-slider disabled :label="ex3.label" v-model="ex3.val" :color="ex3.color"></v-slider>
               </v-card-text>
             </v-card>
           </v-dialog>
@@ -60,7 +57,7 @@
           <v-divider dark></v-divider>
           <template
             v-for="player in playerFilter" v-if="player.poste === poste">
-            <v-dialog v-model="dialog" width="500px">
+            <v-dialog width="500px">
               <v-avatar 
                 size="144px" 
                 slot="activator"
