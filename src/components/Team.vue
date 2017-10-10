@@ -31,7 +31,7 @@
               >
               <img :src="player.src" alt="">
             </v-avatar>
-            <v-card>
+            <v-card class="dialog-window">
               <v-card-text class="text-xs-center">
                 <h6>{{ player.prenom }} {{ player.nom }}</h6>
                 <b>{{ player.poste | uppercase }}</b><br>
@@ -43,7 +43,7 @@
                   >
                   <img :src="player.src" alt="">
                 </v-avatar>
-                <br><b class="text-xs-left">Description</b>
+                <br><b class="text-xs-left">DESCRIPTION</b>
                 <p class="text-xs-left text-description">{{ player.description }}</p>
               </v-card-text>
             </v-card>
@@ -53,7 +53,7 @@
       <div v-else>
         <template v-for="poste in postes">
           <v-divider dark></v-divider>
-          <h6 dark class="mt-3 md-3 text-xs-center poste-title">{{ poste | uppercase }}</h6>
+          <h6 dark class="mt-3 md-3 text-xs-center white--text">{{ poste | uppercase }}</h6>
           <v-divider dark></v-divider>
           <template
             v-for="player in playerFilter" v-if="player.poste === poste">
@@ -66,7 +66,7 @@
                 >
                 <img :src="player.src" alt="">
               </v-avatar>
-              <v-card>
+              <v-card class="dialog-window">
                 <v-card-text class="text-xs-center">
                   <h6>{{ player.prenom }} {{ player.nom }}</h6>
                   <b>{{ player.poste | uppercase }}</b><br>
@@ -130,7 +130,7 @@ export default {
           team2017: true,
           team2016: true,
           src: 'https://i.imgur.com/Gof6ph8.jpg',
-          description: 'Aime découper du Gitan, et le fait savoir. On attend encore le jour où Manu marquera sur une Gardalande, il pourra alors raccrocher les crampons. '
+          description: 'Aime découper du Gitan, et le fait savoir. On attend encore le jour où Manu marquera sur une Gardalande, il pourra alors raccrocher les crampons la conscience tranquille.'
         },
         {
           prenom: 'Victor',
@@ -364,12 +364,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.text-description {
-  text-align: justify;
-}
-
-.poste-title {
-  color: white;
+.dialog-window {
+  background-color: #E6E6E6;
 }
 
 </style>
