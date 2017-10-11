@@ -17,22 +17,21 @@
       ></v-date-picker>
       </center>
     </v-flex>
-    <v-divider dark></v-divider>
     <v-flex
       v-for="event in events"
       v-if="event.date === picker"
       :key="event.event"
       xs12 md6 mt-4 offset-md3
     >
-      <v-card>
-        <v-card-title primary-title>
-          <div>
+      <v-divider dark></v-divider>
+      <v-flex xs10 offset-xs1>
+        <v-card class="elevation-5 mt-3" width="300px">
+          <v-card-text>
             <div class="headline"><b>Quoi?</b> {{ event.event }}</div>
-            <v-divider dark></v-divider>
-      	    <span class="grey--text">{{ event.event }}</span><br>
-      	  </div>
-        </v-card-title>
-      </v-card>
+            <span class="grey--text">{{ event.description }}</span><br>
+          </v-card-text>
+        </v-card>
+      </v-flex>
     </v-flex>
   </v-layout>
 </template>
@@ -44,9 +43,9 @@ export default {
     return {
       allowedDates: ['2017-10-14', '2017-11-11', '2017-11-18'],
       events: [
-        {date: '2017-10-14', event: 'FFSE J2', type: 'match'},
-        {date: '2017-11-11', event: 'FFSE J3', type: 'match'},
-        {date: '2017-11-18', event: 'PRC-VRP', type: 'fete'}
+        {date: '2017-10-14', event: 'FFSE J2', type: 'match', description: 'Détails pratiques à venir.'},
+        {date: '2017-11-11', event: 'FFSE J3', type: 'match', description: 'Détails pratiques à venir.'},
+        {date: '2017-11-18', event: 'PRC-VRP', type: 'fete', description: 'Vieux contre jeunes, une des grandes traditions de l\'équipe.'}
       ],
       picker: null,
       everyOtherDay: function (date) {

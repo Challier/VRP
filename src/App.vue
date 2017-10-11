@@ -83,6 +83,11 @@
           url: '/Data'
         },
         {
+          icon: 'poll',
+          title: 'Classement',
+          url: '/Ranking'
+        },
+        {
           icon: 'shopping_cart',
           title: 'Boutique',
           url: '/Shop'

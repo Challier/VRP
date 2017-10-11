@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Calendar from '@/components/Calendar'
 import Data from '@/components/Data'
+import Ranking from '@/components/Ranking'
 import Team from '@/components/Team'
 import Shop from '@/components/Shop'
 import VueAnalytics from 'vue-analytics'
@@ -41,6 +42,11 @@ const router = new Router({
       path: '/Data',
       name: 'Data',
       component: Data
+    },
+    {
+      path: '/Ranking',
+      name: 'Ranking',
+      component: Ranking
     }
   ]
 })

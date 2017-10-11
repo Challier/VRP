@@ -1,5 +1,5 @@
 <template>
-  <div class="Data">
+  <div class="Ranking">
   	<v-flex xs12 sm8 offset-sm2>
   	<v-data-table
         v-bind:headers="headers"
@@ -9,7 +9,8 @@
       >
       <template slot="items" scope="props">
         <td class="text-xs-left"><v-list-tile-avatar avatar class="ma-1"><img :src="props.item.src" /></v-list-tile-avatar></td>
-        <td class="text-xs-right">{{ props.item.prenom }}</td>
+        <td class="text-xs-right">{{ props.item.nom }}</td>
+        <td class="text-xs-right">2</td>
         <td class="text-xs-right">{{ props.item.nom }}</td>
         <td class="text-xs-right">{{ props.item.poste }}</td>
         <td class="text-xs-right">{{ props.item.capes }}</td>
@@ -23,7 +24,7 @@
 
 <script>
 export default {
-  name: 'Data',
+  name: 'Ranking',
   data () {
     return {
       headers: [
@@ -32,7 +33,7 @@ export default {
           sortable: false,
           value: 'nom'
         },
-        { text: 'Prénom', value: 'prenom' },
+        { text: 'J', value: 'prenom' },
         { text: 'Nom', value: 'nom' },
         { text: 'Poste', value: 'poste' },
         { text: 'Capes', value: 'capes' },
